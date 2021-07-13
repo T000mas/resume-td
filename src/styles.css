@@ -1,0 +1,149 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 30%;
+  width: 15%;
+  right: 2%;
+}
+
+nav ul {
+  padding-left: 0;
+}
+
+nav li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  list-style: none;
+  text-align: right;
+}
+
+nav li:hover {
+  color: red;
+}
+
+nav a {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: gray;
+}
+
+nav a:hover {
+  transition: 1s;
+  color: rgb(202, 0, 0);
+}
+
+nav a:hover > .dot {
+  transition: 1s;
+  background-color: rgb(202, 0, 0);
+}
+
+.active a {
+  transition: 1s;
+  color: black;
+}
+
+.active .dot {
+  transition: 1s;
+  border: 3px;
+  border-style: solid;
+  border-color: gray;
+  height: 6px;
+  width: 6px;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin-left: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+p {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.container {
+  padding-top: 50px;
+  padding-left: 20%;
+  padding-right: 20%;
+  min-height: 600px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.headline {
+  font-size: 35px;
+}
+
+.bold {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.skillname {
+  width: 50%;
+  display: inline-block;
+}
+
+.skilllevel {
+  display: inline-block;
+  /* float: right; */
+}
+
+.welcome {
+  padding: 0;
+  padding-right: 20%;
+  padding-left: 20%;
+  background-image: url("welcomeBackground.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.welcomeText {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutMe {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.details {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: right;
+}
