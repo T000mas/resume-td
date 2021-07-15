@@ -50,7 +50,7 @@ function App() {
     {
       to: "/interests",
       ref: interests,
-      text: "interests",
+      text: "Interests",
       component: <Interests />,
     },
     { to: "/contact", ref: contact, text: "Contact", component: <Contact /> },

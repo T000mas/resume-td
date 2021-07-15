@@ -31,11 +31,8 @@ nav li {
   text-align: right;
 }
 
-nav li:hover {
-  color: red;
-}
-
 nav a {
+  transition: 1s;
   font-size: 25px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -45,6 +42,7 @@ nav a {
 nav a:hover {
   transition: 1s;
   color: black;
+  font-size: 29px;
 }
 
 nav a:hover > .dot {
@@ -54,7 +52,7 @@ nav a:hover > .dot {
 
 .active a {
   transition: 1s;
-  color: #d15e2c;
+  color: black;
 }
 
 .active .dot {
@@ -68,11 +66,14 @@ nav a:hover > .dot {
 }
 
 a {
+  transition: 1s;
   text-decoration: none;
+  color: red;
 }
 
 a:hover {
-  color: gray;
+  transition: 0.5s;
+  color: black;
 }
 
 .dot {
@@ -88,6 +89,7 @@ p {
   margin: 0;
   margin-top: 2px;
   margin-bottom: 0;
+  color: #353535;
 }
 
 .container {
@@ -128,7 +130,7 @@ p {
   background-image: url("welcomeBackground.png");
   background-size: cover;
   background-attachment: fixed;
-  color: white;
+  color: black;
 }
 
 .welcomeText {
@@ -142,7 +144,7 @@ p {
   font-size: 72px;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  border-bottom: 2px solid currentColor;
+  border-bottom: 1px solid #d15e2c;
   display: inline-block;
 }
 
@@ -183,4 +185,12 @@ p {
   min-height: 300px;
   background-color: rgb(78, 78, 78);
   color: white;
+}
+
+.experience {
+  background-color: rgb(240, 240, 240);
+}
+
+.education {
+  background-color: rgb(240, 240, 240);
 }

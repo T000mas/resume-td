@@ -26,6 +26,14 @@ export default function Profile() {
           tomek.dominiczak@gmail.com
         </a>
       </div>
+      <p>
+        I also have many different skills. I have driving license B category
+        that is not so amazing but I also have license of a motorboat helmsman
+        and I finished windsurfing instructor course and recieved instructor
+        certificate. During winter I like to ski and snowboard. I started skiing
+        when I was little and later as I became older i tried snowboarding and
+        also learned it quiet well. During summer I usually go windsurfing
+      </p>
     </div>
   );
 }

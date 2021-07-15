@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <div className="container">
+    <div className="container experience">
       <div className="title">Experience</div>
       <p></p>
       <div className="headline">POLOR</div>
