@@ -13,9 +13,6 @@ export default function Experience() {
           <li>Installing of required software on company’s computers</li>
           <li>Updating company’s database</li>
           <li>Solving software problems</li>
-          <li>Machine cataloging</li>
-          <li>Machine testing</li>
-          <li>Performing tasks in warehouse</li>
         </ul>
       </p>
     </div>
