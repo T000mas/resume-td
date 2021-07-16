@@ -13,6 +13,7 @@ export default function Abilities() {
         for me to evaluate my actual skills.
       </p>
       <div className="skills">
+        <div className="headline">Programming</div>
         <ul>
           <Stars name="React" number={3} />
           <Stars name="Python" number={3} />

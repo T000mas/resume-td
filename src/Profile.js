@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Profile() {
   return (
-    <div className="container">
+    <div className="container profile">
       <div className="title">Profile</div>
       <div className="aboutMe">
         <div className="headline">About me</div>
@@ -30,9 +30,12 @@ export default function Profile() {
         I also have many different skills. I have driving license B category
         that is not so amazing but I also have license of a motorboat helmsman
         and I finished windsurfing instructor course and recieved instructor
-        certificate. During winter I like to ski and snowboard. I started skiing
-        when I was little and later as I became older i tried snowboarding and
-        also learned it quiet well. During summer I usually go windsurfing
+        certificate. Also since I was 7 years old I play the piano and I think
+        I'm not so bad at it (see here (IN PROGRESS)) During winter I like to
+        ski and snowboard. I started skiing when I was little and later as I
+        became older i tried snowboarding and also learned it quiet well. During
+        summer I prefer seaside. I usually do some water sports or some
+        activities connected with water.
       </p>
     </div>
   );

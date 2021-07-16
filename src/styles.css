@@ -5,6 +5,9 @@ body {
   padding: 0;
   font-size: 22px;
   text-align: center;
+  background-image: url("pattern.png");
+  background-repeat: repeat-y;
+  background-size: 15%;
 }
 
 html {
@@ -57,18 +60,17 @@ nav a:hover > .dot {
 
 .active .dot {
   transition: 1s;
-  border: 3px;
-  border-style: solid;
-  border-color: #d15e2c;
-  height: 8px;
-  width: 8px;
+
+  height: 14px;
+  width: 14px;
   background-color: black;
 }
 
 a {
-  transition: 1s;
+  transition: 0.2s;
   text-decoration: none;
-  color: red;
+  color: #d15e2c;
+  font-size: 30px;
 }
 
 a:hover {
@@ -85,42 +87,45 @@ a:hover {
   display: inline-block;
 }
 
-p {
-  margin: 0;
-  margin-top: 2px;
-  margin-bottom: 0;
-  color: #353535;
+li {
+  font-size: 25px;
+  text-align: left;
+}
+
+ul {
+  padding-left: 30px;
 }
 
 .container {
-  padding-top: 50px;
+  padding-top: 80px;
   padding-left: 20%;
   padding-right: 20%;
-  min-height: 600px;
+  min-height: 500px;
+  padding-bottom: 80px;
 }
 
 .title {
-  font-size: 50px;
+  font-size: 75px;
+  padding-bottom: 10px;
 }
 
 .headline {
-  font-size: 35px;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+p {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #353535;
+  font-size: 30px;
 }
 
 .bold {
   font-weight: bold;
-  margin-top: 10px;
-}
-
-.skillname {
-  width: 50%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.skilllevel {
-  display: inline-block;
-  vertical-align: middle;
+  margin-top: 15px;
+  font-size: 30px;
 }
 
 .welcome {
@@ -150,18 +155,23 @@ p {
 
 .welcomeText > .headline {
   font-size: 36px;
+  padding-top: 0;
+}
+
+.profile > p {
+  text-align: justify;
 }
 
 .aboutMe {
   display: inline-block;
-  width: 50%;
+  width: 55%;
   vertical-align: top;
-  text-align: left;
+  text-align: justify;
 }
 
 .details {
   display: inline-block;
-  width: 50%;
+  width: 45%;
   vertical-align: top;
   text-align: right;
 }
@@ -172,25 +182,64 @@ p {
   width: 50%;
 }
 
+.skills > .headline,
+.languagesTools > .headline {
+  text-align: left;
+}
+
 .languagesTools {
   display: inline-block;
   vertical-align: middle;
   width: 50%;
 }
 
+.skillname {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skilllevel {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .contact {
   position: relative;
   padding-top: 100px;
   padding-bottom: 0;
-  min-height: 300px;
-  background-color: rgb(78, 78, 78);
-  color: white;
+  min-height: 600px;
+  background-color: #57c5f0;
+  color: black;
+}
+
+.contact > p {
+  color: black;
 }
 
 .experience {
-  background-color: rgb(240, 240, 240);
+  background-color: #e0e0e0;
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+.experience > .title {
+  text-align: center;
+  padding-bottom: 0;
 }
 
 .education {
-  background-color: rgb(240, 240, 240);
+  padding-top: 0px;
+  background-color: #e0e0e0;
+  text-align: left;
+  padding-top: 80px;
+}
+
+.education > .title {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.education > .headline {
+  padding-top: 60px;
 }
