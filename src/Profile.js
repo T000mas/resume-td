@@ -7,9 +7,9 @@ export default function Profile() {
       <div className="aboutMe">
         <div className="headline">About me</div>
         <p>
-          I am fourth-year student of Wrocław University of Science and
+          I am a fourth-year student of Wrocław University of Science and
           Technology, specialization Applied Computer Science. I'm beginning my
-          web development journey and I aim to become senior front-end
+          web development journey and I aim to become a senior front-end
           developer. I love creating websites and solving new problems. I learn
           fast and I am always open to constructive criticism.
         </p>
@@ -27,15 +27,15 @@ export default function Profile() {
         </a>
       </div>
       <p>
-        I also have many different skills. I have driving license B category
-        that is not so amazing but I also have license of a motorboat helmsman
-        and I finished windsurfing instructor course and recieved instructor
-        certificate. Also since I was 7 years old I play the piano and I think
-        I'm not so bad at it (see here (IN PROGRESS)) During winter I like to
-        ski and snowboard. I started skiing when I was little and later as I
-        became older i tried snowboarding and also learned it quiet well. During
-        summer I prefer seaside. I usually do some water sports or some
-        activities connected with water.
+        I also have many different skills. I have a driving license B category
+        that is not so amazing but I also have a license of a motorboat helmsman
+        and I finished a windsurfing instructor course and recieved the
+        instructor certificate. Also since I was 7 years old I play the piano
+        and I think I'm not so bad at it (see here (IN PROGRESS)) During winter
+        I like to ski and snowboard. I started skiing when I was little and
+        later as I became older i tried snowboarding and also learned it quiet
+        well. During summer I prefer the seaside. I usually do some water sports
+        or some activities connected with water.
       </p>
     </div>
   );

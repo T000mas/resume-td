@@ -5,10 +5,8 @@ export default function Abilities() {
   return (
     <div className="container">
       <div className="title">Abilities</div>
-
-      <div className="headline">Skills</div>
       <p>
-        Below I made summary of my skills and on what level I think I am. I
+        Below I made a summary of my skills and on what level I think I am. I
         tried to be as objective as I could in creating this list but it's hard
         for me to evaluate my actual skills.
       </p>
@@ -59,6 +57,26 @@ export default function Abilities() {
           <Stars name="Adobe Premiere" number={2} />
 
           <Stars name="Code Blocks" number={1} />
+          <Stars name="Microsoft SQL Server Management Studio" number={1} />
+          <Stars name="SQL Server Integration Services" number={1} />
+          <Stars name="Tableau prep" number={1} />
+        </ul>
+      </div>
+      <div className="legend">
+        <div className="headline">Legend:</div>
+        <ul>
+          <Stars
+            name="Familiar with the basics | used during studies"
+            number={1}
+          />
+          <Stars name="Junior knowledge | done some projects" number={2} />
+          <Stars
+            name="Junior/Regular knowledge | done projects, studied subject more thoroughly"
+            number={3}
+          />
+          <Stars name="Regular" number={4} />
+          <Stars name="Regular/Senior" number={5} />
+          <Stars name="Senior" number={6} />
         </ul>
       </div>
     </div>

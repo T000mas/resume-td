@@ -11,9 +11,9 @@ export default function Interests() {
       </p>
       <p>
         I started windsurfing as I was 13 years old and I still love doing it. I
-        even managed to finish instructor course and recived instructor
+        even managed to finish the instructor course and recived an instructor
         certificate. During summer I usually travel somewhere where there is
-        strong wind and good weather condition for windsurfing.
+        strong wind and a good weather condition for windsurfing.
       </p>
       <p>
         For computer games I started playing as child usually with my older

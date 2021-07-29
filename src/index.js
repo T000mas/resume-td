@@ -11,8 +11,34 @@ import Profile from "./Profile";
 import "./styles.css";
 import Welcome from "./Welcome";
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+export default function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+
 function App() {
   const [active, setActive] = useState(0);
+  const [isOpened, setIsOpened] = useState(false);
   const welcome = useRef(null);
   const profile = useRef(null);
   const experience = useRef(null);
@@ -21,6 +47,19 @@ function App() {
   const interests = useRef(null);
   const contact = useRef(null);
   const observer = useRef(null);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
 
   const executeScroll = (ref, index) => {
     ref.current.scrollIntoView();
@@ -86,7 +125,7 @@ function App() {
   return (
     <div className="index">
       <Router>
-        <nav>
+        <nav className={isOpened ? "navOpened" : undefined}>
           <ul>
             {sections.current.map((section, index) => {
               const className = active === index ? "active" : "";
@@ -94,7 +133,10 @@ function App() {
                 <li id={active} key={index} className={className}>
                   <Link
                     to={section.to}
-                    onClick={() => executeScroll(section.ref, index)}
+                    onClick={() => {
+                      executeScroll(section.ref, index);
+                      setIsOpened(!isOpened);
+                    }}
                   >
                     {section.text}
                     <span className="dot"></span>
@@ -105,6 +147,13 @@ function App() {
           </ul>
         </nav>
       </Router>
+      {width <= 1200 && (
+        <div className="navClosed">
+          <button className="navButton" onClick={() => setIsOpened(!isOpened)}>
+            Navigation
+          </button>
+        </div>
+      )}
 
       {sections.current.map((section, index) => {
         return (
