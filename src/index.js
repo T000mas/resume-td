@@ -11,31 +11,6 @@ import Profile from "./Profile";
 import "./styles.css";
 import Welcome from "./Welcome";
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
-}
-
-export default function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowDimensions;
-}
-
 function App() {
   const [active, setActive] = useState(0);
   const [isOpened, setIsOpened] = useState(false);
@@ -48,23 +23,6 @@ function App() {
   const contact = useRef(null);
   const observer = useRef(null);
   const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
-
-  const executeScroll = (ref, index) => {
-    ref.current.scrollIntoView();
-  };
-
   const sections = useRef([
     { to: "/welcome", ref: welcome, text: "Welcome", component: <Welcome /> },
     { to: "/profile", ref: profile, text: "Profile", component: <Profile /> },
@@ -94,6 +52,45 @@ function App() {
     },
     { to: "/contact", ref: contact, text: "Contact", component: <Contact /> },
   ]);
+
+  useEffect(() => {
+    const href = window.location.href.split("/").slice(-1)[0];
+    console.log(href);
+    if (href !== "" && href !== "#") {
+      sections.current.map((section) => {
+        if (section.text.toLowerCase() === href) {
+          executeScroll(section.ref);
+        }
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isOpened) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpened]);
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+      if (window.innerWidth >= 1200) {
+        setIsOpened(false);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const executeScroll = (ref, index) => {
+    ref.current.scrollIntoView();
+  };
 
   useEffect(() => {
     const options = {
@@ -135,7 +132,9 @@ function App() {
                     to={section.to}
                     onClick={() => {
                       executeScroll(section.ref, index);
-                      setIsOpened(!isOpened);
+                      if (width <= 1200) {
+                        setIsOpened(!isOpened);
+                      }
                     }}
                   >
                     {section.text}
