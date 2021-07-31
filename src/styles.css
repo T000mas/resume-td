@@ -4,11 +4,8 @@
     background-color: white;
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    background-image: url("pattern.png");
-    background-repeat: repeat-y;
-    background-size: 50%;
   }
 
   html {
@@ -67,15 +64,17 @@
   nav li {
     list-style: none;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 0.5em;
   }
 
   nav a {
     transition: 0.5s;
-    font-size: 2em;
-    padding: 0.5em;
+    font-size: 1.2em;
     color: #d15e2c;
+    margin-top: 0;
+    padding: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   nav a:hover {
@@ -98,7 +97,8 @@
     text-decoration: none;
     color: #d15e2c;
     font-size: 0.8em;
-    padding-top: 1em;
+    margin-top: 1em;
+    display: block;
   }
 
   a:hover {
@@ -152,9 +152,6 @@
     padding: 0;
     padding-right: 10%;
     padding-left: 10%;
-    background-image: url("welcomeBackground.png");
-    background-size: cover;
-    background-attachment: fixed;
     color: black;
   }
 
@@ -214,6 +211,19 @@
       padding-left: 15%;
       padding-right: 15%;
     }
+
+    nav a {
+      font-size: 1.3em;
+    }
+  }
+
+  .legend {
+    margin-top: 2em;
+    border-top: 0.06em solid #353535;
+  }
+
+  .legend .headline {
+    padding-top: 0.2em;
   }
 
   .skill:hover {
@@ -401,9 +411,7 @@
     padding: 0;
     padding-right: 20%;
     padding-left: 20%;
-    background-image: url("welcomeBackground.png");
-    background-size: cover;
-    background-attachment: fixed;
+
     color: black;
   }
 
@@ -433,16 +441,21 @@
 
   .aboutMe {
     display: inline-block;
-    width: 55%;
+    width: 50%;
     vertical-align: top;
     text-align: justify;
+    padding-left: 5%;
+  }
+
+  .aboutMe .headline {
+    padding-top: 0;
   }
 
   .details {
     display: inline-block;
     width: 45%;
     vertical-align: top;
-    text-align: right;
+    text-align: left;
   }
 
   .skills {

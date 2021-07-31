@@ -4,6 +4,16 @@ export default function Profile() {
   return (
     <div className="container profile">
       <div className="title">Profile</div>
+      <div className="details">
+        <p className="bold">Name:</p>
+        <p>Tomasz Dominiczak</p>
+        <p className="bold">Age:</p>
+        <p>23</p>
+        <p className="bold">E-mail</p>
+        <a href="mailto:tomek.dominiczak@gmail.com">
+          tomek.dominiczak@gmail.com
+        </a>
+      </div>
       <div className="aboutMe">
         <div className="headline">About me</div>
         <p>
@@ -13,18 +23,6 @@ export default function Profile() {
           developer. I love creating websites and solving new problems. I learn
           fast and I am always open to constructive criticism.
         </p>
-      </div>
-
-      <div className="details">
-        <div className="headline">Details</div>
-        <p className="bold">Name:</p>
-        <p>Tomasz Dominiczak</p>
-        <p className="bold">Age:</p>
-        <p>23</p>
-        <p className="bold">E-mail</p>
-        <a href="mailto:tomek.dominiczak@gmail.com">
-          tomek.dominiczak@gmail.com
-        </a>
       </div>
       <p>
         I also have many different skills. I have a driving license B category
