@@ -59,8 +59,9 @@ function App() {
     if (href !== "" && href !== "#") {
       sections.current.map((section) => {
         if (section.text.toLowerCase() === href) {
-          executeScroll(section.ref);
+          return executeScroll(section.ref);
         }
+        return null;
       });
     }
   }, []);
