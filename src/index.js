@@ -55,7 +55,6 @@ function App() {
 
   useEffect(() => {
     const href = window.location.href.split("/").slice(-1)[0];
-    console.log(href);
     if (href !== "" && href !== "#") {
       sections.current.map((section) => {
         if (section.text.toLowerCase() === href) {
