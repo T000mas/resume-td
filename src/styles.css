@@ -127,11 +127,13 @@
 
   .title {
     font-size: 2.5em;
+    padding-bottom: 0.2em;
   }
 
   .headline {
     padding-top: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 
   p {
@@ -248,7 +250,7 @@
     font-size: 1em;
   }
 
-  .interests {
+  .interests p {
     text-align: justify;
   }
 
@@ -271,6 +273,10 @@
 
   .experience > .title {
     text-align: center;
+  }
+
+  .experience li {
+    font-size: 1em;
   }
 
   .education {
@@ -361,12 +367,13 @@
   }
 
   .dot {
-    height: 1em;
-    width: 1em;
-    margin-left: 10px;
+    height: 0.8em;
+    width: 0.8em;
+    margin-left: 0.5em;
     background-color: #d15e2c;
     border-radius: 50%;
     display: inline-block;
+    vertical-align: middle;
   }
 
   li {
@@ -392,12 +399,13 @@
 
   .title {
     font-size: 2.5em;
-    padding-bottom: 10px;
+    padding-bottom: 0.5em;
   }
 
   .headline {
-    padding-top: 50px;
-    font-size: 1.5em;
+    padding-top: 1.2em;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 
   p {
@@ -538,7 +546,6 @@
   .experience {
     background-color: #e0e0e0;
     text-align: left;
-    padding-bottom: 0px;
   }
 
   .experience > .title {
@@ -558,7 +565,6 @@
 
   .education > .title {
     text-align: center;
-    padding-bottom: 0;
   }
 
   .education li {

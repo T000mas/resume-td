@@ -4,7 +4,6 @@ export default function Experience() {
   return (
     <div className="container experience">
       <div className="title">Experience</div>
-      <p></p>
       <div className="headline">POLOR</div>
       <p>08/2017 – 09/2017</p>
       <p className="bold">IT–warehouse worker</p>

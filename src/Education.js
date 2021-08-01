@@ -4,7 +4,6 @@ export default function Education() {
   return (
     <div className="container education">
       <div className="title">Education</div>
-      <p></p>
       <div className="headline">
         Student of Wrocław University of Science and Technology
       </div>
