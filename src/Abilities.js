@@ -3,7 +3,7 @@ import Stars from "./Stars";
 
 export default function Abilities() {
   return (
-    <div className="container">
+    <div className="container abilities">
       <div className="title">Abilities</div>
       <p>
         Below I made a summary of my skills and on what level I think I am. I

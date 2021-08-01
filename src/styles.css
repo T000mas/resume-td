@@ -96,7 +96,7 @@
     transition: 0.2s;
     text-decoration: none;
     color: #d15e2c;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 1em;
     display: block;
   }
@@ -139,13 +139,13 @@
     margin-top: 1em;
     margin-bottom: 0;
     color: #353535;
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .bold {
     font-weight: bold;
     margin-top: 1em;
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .welcome {
@@ -188,6 +188,10 @@
     vertical-align: top;
     text-align: left;
     padding-bottom: 1em;
+  }
+
+  .abilities p {
+    text-align: justify;
   }
 
   .skills > .headline,
@@ -241,7 +245,11 @@
   }
 
   span {
-    font-size: 0.6em;
+    font-size: 1em;
+  }
+
+  .interests {
+    text-align: justify;
   }
 
   .contact {
@@ -307,15 +315,15 @@
   }
 
   nav li {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
     list-style: none;
     text-align: right;
   }
 
   nav a {
     transition: 1s;
-    font-size: 1em;
+    font-size: 0.8em;
     padding-top: 4px;
     padding-bottom: 4px;
     color: #353535;
@@ -324,7 +332,7 @@
   nav a:hover {
     transition: 1s;
     color: black;
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
 
   nav a:hover > .dot {
@@ -333,7 +341,7 @@
 
   .active > a {
     color: black;
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
 
   .active .dot {
@@ -344,8 +352,7 @@
     transition: 0.2s;
     text-decoration: none;
     color: #d15e2c;
-    font-size: 0.8em;
-    padding-top: 15px;
+    font-size: 1em;
   }
 
   a:hover {
@@ -398,13 +405,13 @@
     margin-top: 15px;
     margin-bottom: 0;
     color: #353535;
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .bold {
     font-weight: bold;
     margin-top: 15px;
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .welcome {
@@ -458,6 +465,15 @@
     text-align: left;
   }
 
+  .details a {
+    margin-top: 1em;
+    display: block;
+  }
+
+  .abilities p {
+    text-align: justify;
+  }
+
   .skills {
     display: inline-block;
     vertical-align: middle;
@@ -493,8 +509,12 @@
     padding-right: 10%;
   }
 
+  .interests p {
+    text-align: justify;
+  }
+
   span {
-    font-size: 0.6em;
+    font-size: 1em;
   }
 
   .contact {
@@ -510,6 +530,11 @@
     color: black;
   }
 
+  .contact a {
+    margin-top: 1em;
+    display: block;
+  }
+
   .experience {
     background-color: #e0e0e0;
     text-align: left;
@@ -521,6 +546,10 @@
     padding-bottom: 0;
   }
 
+  .experience li {
+    font-size: 1em;
+  }
+
   .education {
     padding-top: 0px;
     background-color: #e0e0e0;
@@ -530,5 +559,9 @@
   .education > .title {
     text-align: center;
     padding-bottom: 0;
+  }
+
+  .education li {
+    font-size: 1em;
   }
 }
