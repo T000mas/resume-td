@@ -54,6 +54,18 @@ function App() {
   ]);
 
   useEffect(() => {
+    window.onscroll = () => {
+      var scrollHeight, totalHeight;
+      scrollHeight = document.body.scrollHeight;
+      totalHeight = window.scrollY + window.innerHeight;
+
+      if (totalHeight >= scrollHeight) {
+        setActive(6);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
     const href = window.location.href.split("/").slice(-1)[0];
     if (href !== "" && href !== "#") {
       sections.current.map((section) => {
